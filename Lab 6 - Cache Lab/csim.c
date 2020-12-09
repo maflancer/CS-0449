@@ -40,7 +40,7 @@ typedef unsigned long long int mem_addr_t;
 /*
  * Data structures to represent the cache we are simulating
  *
- * TODO: Define your own!
+ *
  *
  * E.g., Types: cache, cache line, cache set
  * (you can use a counter to implement LRU replacement policy)
@@ -77,7 +77,7 @@ int eviction_count = 0;
  * initCache - Allocate memory (with malloc) for cache data structures (i.e., for each of the sets and lines per set),
  * writing 0's for valid and tag and LRU
  *
- * TODO: Implement
+ *
  *
  */
 void initCache()
@@ -102,7 +102,7 @@ void initCache()
  * This function deallocates (with free) the cache data structures of each
  * set and line.
  *
- * TODO: Implement
+ * 
  */
 void freeCache()
 {
@@ -120,7 +120,7 @@ void freeCache()
  *   If it is not in cache, bring it in cache, increase miss count.
  *   Also increase eviction_count if a line is evicted.
  *
- * TODO: Implement
+ * 
  */
 void accessData(mem_addr_t addr)
 {
@@ -205,7 +205,7 @@ void accessData(mem_addr_t addr)
  *   from each input line
  * - calls `access_data(address)` for each access to a cache line
  *
- * TODO: Implement
+ * 
  *
  */
 void replayTrace(char* trace_fn)
