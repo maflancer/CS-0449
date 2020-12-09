@@ -254,12 +254,7 @@ void *mm_malloc(size_t size)
     write_footer(block, newSize, 1);
 
     split_block(block, asize); //split the block (if possible)
-
-    //if(check_heap() == false) {
-      //printf("%s\n", "HEAP IS NOT CONSISTENT");  DEBUGGING
-      //exit(0);
-    //}
-
+ 
     return header_to_payload(block);
 }
 
